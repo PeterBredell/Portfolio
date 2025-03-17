@@ -1,1 +1,48 @@
 @import "tailwindcss";
+
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply transition-colors duration-200;
+    }
+}
+
+@layer components {
+    .transition {
+        @apply duration-300 ease-in-out;
+    }
+}
+
+@layer utilities {
+    .parallax {
+        @apply relative overflow-hidden;
+    }
+    
+    .parallax-content {
+        @apply relative z-10;
+    }
+
+    .parallax-bg {
+        @apply absolute inset-0 z-0 transform scale-110;
+    }
+
+    .scroll-reveal {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 1s cubic-bezier(0.17, 0.55, 0.55, 1);
+    }
+
+    .scroll-reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .delay-200 {
+        transition-delay: 200ms;
+    }
+
+    .delay-400 {
+        transition-delay: 400ms;
+    }
+}
