@@ -86,7 +86,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project Card 1 -->
                 <div class="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden scroll-reveal">
-                    <img src="assets/project1.jpg" alt="Weather Website" class="w-full h-48 object-cover">
+                    <img src="assets/WeatherWebsite.PNG" alt="Weather Website" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400 mb-2">Weather Website</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">A basic website showcasing my skills in API usage and raw html,css and javascript.</p>
@@ -104,7 +104,7 @@
 
                 <!-- Project Card 2 -->
                 <div class="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden scroll-reveal delay-200">
-                    <img src="assets/network-scanner.jpg" alt="Password-checker" class="w-full h-48 object-cover">
+                    <img src="assets/Command-Line-Interface-CLI-3984682169.jpg" alt="Password-checker" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400 mb-2">Password Strength Checker</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">Currently CLI password strength checker that validates and provides strong passwords for users.</p>
@@ -121,7 +121,7 @@
 
                 <!-- Project Card 3 -->
                 <div class="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden scroll-reveal delay-400">
-                    <img src="assets/encryption-app.jpg" alt="Coding Club Website" class="w-full h-48 object-cover">
+                    <img src="assets/CodingClub.PNG" alt="Coding Club Website" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400 mb-2">Coding Club Website</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">A massive group project which won my Team Bazinga the Coding Club Hackathon as a bunch of 1st years!</p>
@@ -139,7 +139,7 @@
 
                 <!-- Project Card 4 -->
                 <div class="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden scroll-reveal">
-                    <img src="assets/password-manager.jpg" alt="This Portfolio" class="w-full h-48 object-cover">
+                    <img src="assets/Portfolio.PNG" alt="This Portfolio" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400 mb-2">My Portfolio Website</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">This very website is almost a 'nested portfolio' showcasing my ability to use TailwindCSS.</p>
@@ -158,7 +158,7 @@
                 
                 <!-- Project Card 5 -->
                 <div class="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden scroll-reveal delay-200">
-                    <img src="assets/malware-analysis.jpg" alt="?" class="w-full h-48 object-cover">
+                    <img src="assets/ComingSoon.png" alt="?" class="w-full h-48 object-contain bg-gray-200 dark:bg-gray-700">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400 mb-2">Coming Soon</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">I am actively working hard at new projects from which I can learn and grow.</p>
@@ -168,7 +168,7 @@
                             <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 rounded-full text-sm">Being a better me</span>
                         </div>
                         <div class="flex gap-4">
-                            <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">Recommend me a project</a>
+                            <a href="#recommend" id="recommendProjectLink" class="text-blue-600 dark:text-blue-400 hover:underline">Recommend me a project</a>
                         </div>
                     </div>
                 </div>
@@ -186,17 +186,49 @@
                 <!-- Experience Item -->
                 <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg scroll-reveal">
                     <div class="flex flex-col md:flex-row justify-between mb-4">
-                        <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400">Cyber Security Intern</h3>
-                        <span class="text-gray-600 dark:text-gray-400">Jun 2023 - Present</span>
+                        <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400">General Intern</h3>
+                        <span class="text-gray-600 dark:text-gray-400">Nov 2024 - Nov 2024 · 1 mo</span>
                     </div>
-                    <h4 class="text-lg font-semibold mb-2">Company Name</h4>
+                    <h4 class="text-lg font-semibold mb-2">Mes Crane</h4>
                     <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-2">
-                        <li>Conducted vulnerability assessments and penetration testing</li>
-                        <li>Implemented security measures and best practices</li>
-                        <li>Collaborated with team on incident response</li>
+                        <li>Participated in hands-on training sessions to gain practical experience.</li>
+                        <li>Learned to understand the operations and maintenance of cranes through expert mentoring.</li>
+                        <li>Learned about the expectations of what soft skills will be required of me in the workplace.</li>
                     </ul>
                 </div>
                 <!-- Add more experience items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Recommendation Section -->
+    <section id="recommend" class="hidden py-20 bg-gray-100 dark:bg-gray-800 transition-all duration-300 ease-in-out">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center scroll-reveal">Recommend a Project</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg scroll-reveal">
+                    <form class="space-y-4" id=form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="1f079643-8a71-4c1b-a8ca-0715591bf7ce" />
+                        <div class="h-captcha flex justify-center" data-captcha="true"></div>
+                        <div>
+                            <label class="block text-gray-700 dark:text-gray-300 mb-2" >Project Title</label>
+                            <input type="text" name="Project Title" required class="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-700">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 dark:text-gray-300 mb-2" >Technologies</label>
+                            <input type="text" name="Technologies" required class="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-700" placeholder="e.g., Python, React, AWS">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 dark:text-gray-300 mb-2" >Project Description</label>
+                            <textarea class="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-700 h-32" name="Project Description"></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 dark:text-gray-300 mb-2" >Your Email (optional)</label>
+                            <input type="email"name="email" class="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-700">
+                        </div>
+                        <button class="w-full bg-blue-600 dark:bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition">Submit Recommendation</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -214,7 +246,7 @@
                     <p class="text-gray-600 dark:text-gray-400">Relevant Coursework (As far as I have covered):</p>
                     <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-2">
                         <li>Computer Network And Security (ITCNA)</li>
-                        <li>None technical skills for IT professionals (ITPFA)</li>
+                        <li>Non-technical skills for IT professionals (ITPFA)</li>
                         <li>Computer Skills (ITSMA)</li>
                     </ul>
                 </div>
@@ -240,18 +272,20 @@
             <div class="grid md:grid-cols-2 gap-12">
                 <!-- Contact Form -->
                 <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg scroll-reveal">
-                    <form class="space-y-4">
+                    <form class="space-y-4" id=form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="1f079643-8a71-4c1b-a8ca-0715591bf7ce" />
+                        <div class="h-captcha flex justify-center" data-theme="dark" data-captcha="true"></div>
                         <div>
                             <label class="block text-gray-700 dark:text-gray-300 mb-2">Name</label>
-                            <input type="text" class="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-700">
+                            <input type="text" name="name" required class="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-700">
                         </div>
                         <div>
                             <label class="block text-gray-700 dark:text-gray-300 mb-2">Email</label>
-                            <input type="email" class="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-700">
+                            <input type="email" name="email" required class="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-700">
                         </div>
                         <div>
                             <label class="block text-gray-700 dark:text-gray-300 mb-2">Message</label>
-                            <textarea class="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-700 h-32"></textarea>
+                            <textarea name="message" class="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-700 h-32"></textarea>
                         </div>
                         <button class="w-full bg-blue-600 dark:bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition">Send Message</button>
                     </form>
@@ -279,5 +313,8 @@
     </section>
 
     <script src="src/main.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="src/forms.js"></script>
+    <script src="src/formReset.js"></script>
 </body>
 </html>

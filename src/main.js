@@ -24,6 +24,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Handle project recommendation section
+document.getElementById('recommendProjectLink').addEventListener('click', function(e) {
+    e.preventDefault();
+    const recommendSection = document.getElementById('recommend');
+    recommendSection.classList.toggle('hidden');
+    
+    // Scroll to the section if it's being shown
+    if (!recommendSection.classList.contains('hidden')) {
+        recommendSection.scrollIntoView({ behavior: 'smooth' });
+        
+        // Trigger scroll reveal animation
+        const reveals = recommendSection.querySelectorAll('.scroll-reveal');
+        reveals.forEach(el => observer.observe(el));
+    }
+});
+
 // Add scroll event listener to handle navigation highlighting
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
